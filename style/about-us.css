@@ -1,0 +1,206 @@
+.about-us {
+    margin-top: 90px;
+}
+
+.about-us__container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-us__article {
+
+    width: 50%;
+
+}
+
+.about-us__picture--container {
+
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+}
+
+.about-us__picture {
+
+    height: 585px;
+    width: 500px;
+
+}
+
+.about-us__picture--header {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    background-color: #e2e659;
+    font-family: 'Merriweather', serif;
+    padding: 50px;
+    font-size: 36px;
+    width: 50%;
+
+}
+
+.about-us__h3 {
+    font-family: 'Covered By Your Grace', cursive;
+    color: #118442;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.about-us__h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-us__paragraph {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: rgb(107, 104, 104);
+    padding: 10px 0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-us__phone--container {
+    display: flex;
+    background-color: #118442;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us__phone_container--icon {
+
+    font-size: 50px;
+    padding: 5px;
+}
+
+.about-us__phone--header {
+    padding: 50px 35px;
+    font-family: 'Merriweather', serif;
+    font-size: 36px;
+    color: white;
+    width: 80%;
+}
+.phone-number__span {
+    color: #e2e659;
+}
+
+@media screen and (max-width:1024px) {
+
+    .about-us__container {
+        flex-direction: column;
+        width: 90%;
+
+    }
+
+    .about-us__article {
+
+        width: 95%;
+        text-align: justify;
+
+    }
+
+    .about-us__picture--container {
+
+        width: 95%;
+    }
+
+    .about-us__picture--header {
+        position: absolute;
+        right: 120px;
+        bottom: 0;
+        width: 40%;
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .about-us__article {
+
+        width: 95%;
+        text-align: justify;
+
+    }
+
+    .about-us__picture--container {
+
+        width: 95%;
+    }
+
+    .about-us__picture--header {
+        position: absolute;
+        right: 50px;
+        bottom: -5%;
+        width: 40%;
+
+    }
+
+}
+
+@media screen and (max-width:420px) {
+
+    .about-us__container {
+
+        width: 95%;
+
+    }
+    .logo {
+        font-size: 22px;
+    }
+
+    .about-us__phone--container {
+
+        flex-direction: column;
+        text-align: center;
+        height: 60vh;
+
+    }
+
+    .about-us__picture--container {
+
+        width: 95%;
+        margin-top: 20px;
+
+    }
+
+    .about-us__picture {
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .about-us__picture--header {
+        font-size: 30px;
+        width: 90%;
+        left: 3%;
+        bottom: -140px;
+
+    }
+
+    .about-us__h2 {
+
+        font-size: 35px;
+
+    }
+
+    .about-us__phone--header {
+
+        font-size: 30px;
+        width: 80%;
+    }
+
+    .about-us__phone_container--icon {
+        margin-top: 30px;
+
+    }
+
+}

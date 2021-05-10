@@ -1,0 +1,180 @@
+
+
+.baner
+{
+
+    background-image: url("../graphics/ss.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    
+}
+
+.baner::before
+{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    
+}
+.main-baner__container
+{
+    display: flex;
+    width: 100%;
+    height: 35%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+   z-index: 1;
+    
+}
+
+
+.main-baner__header
+{
+    font-family: 'Merriweather', serif;
+    font-size: 70px;
+    color: white;
+}
+
+.main-baner__header--span
+{
+    color:#e2e659;
+    text-decoration: underline;
+}
+
+.second-baner__header
+{
+    font-family: 'Covered By Your Grace', cursive;
+    color: #e2e659;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+
+
+.main-baner__button
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 19px 48px;
+    background-color: #118442;
+    border-radius: 30px;
+    border: solid 3px #118442;
+    transition: all ease-in-out 0.2s;
+
+}
+
+.main-baner__button:hover
+{
+    cursor: pointer; 
+    background-color: #106e39;
+  
+  
+}
+
+
+@media screen and (max-width:1024px)
+{
+    .main-baner__container
+    {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (max-width:420px)
+{
+
+    .baner{
+        transition: transform ease-in-out 0.5s;
+     
+       
+        
+    }
+    .baner-changed
+    {
+        transform: translateY(70%);
+        
+        
+   
+        
+    }
+
+    .main-baner__container
+    {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .main-baner__header{
+        font-size: 40px;
+    }
+
+    .second-baner__header
+    {
+        font-size: 20px;
+    }
+
+    .main-baner__button
+    {
+        padding: 13px 36px;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-height:825px)
+{
+
+    
+        
+    .baner-changed
+    {
+        transform: translateY(58%);
+        position: unset;
+   
+        
+    }
+
+}
+
+
+@media screen and (max-height:670px)
+{
+
+    
+        
+    .baner-changed
+    {
+        transform: translateY(70%);
+        position: unset;
+   
+        
+    }
+
+}
+
+
+
+
+
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;

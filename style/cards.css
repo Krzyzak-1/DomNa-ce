@@ -1,0 +1,87 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.cards-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.bg-div {
+    margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22vw;
+    height: 50vh;
+    position: relative;
+    border-radius: 2%;
+    overflow: hidden;
+
+}
+
+.picture1 {
+    background-image: url("graphics/1.jpg");
+}
+
+.picture2 {
+    background-image: url("graphics/2.jpg");
+}
+
+.picture3 {
+    background-image: url("graphics/3.jpg");
+}
+
+.bg-div__text--container {
+    background-color: rgba(41, 145, 32, 0.897);
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in-out 0.7s;
+    border-radius: 2%;
+    padding: 5%;
+    line-height: 1.6;
+    text-align: center;
+}
+.bg-div__header {
+    color: white;
+    font-size: 38px;
+}
+
+.bg-div__paragraph {
+    color: white;
+    font-size: 24px;
+}
+
+.bg-div:hover .bg-div__text--container {
+    animation-name: animacja;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+
+@keyframes animacja {
+
+    0% {
+        transform: rotate(0deg) translateY(100%);
+    }
+
+    50% {
+        transform: rotate(-15deg);
+
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0%);
+
+    }
+}
